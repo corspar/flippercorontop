@@ -1,0 +1,14 @@
+REM Flipper Zero Rubber Ducky script to open Notepad and type "cor" 100 times
+
+DELAY 5000   ; Wait for 5 seconds before starting the script
+
+GUI r       ; Press Windows key + R to open the Run dialog
+DELAY 500   ; Wait for the Run dialog to open
+STRING notepad   ; Type "notepad" to open Notepad app
+ENTER       ; Press Enter to run the command
+DELAY 5000   ; Wait for Notepad to open
+
+REPEAT 100  ; Repeat the following command 100 times
+    STRING cor on top  ; Type "cor on top"
+    ENTER   ; Press Enter to start a new line
+ENDREPEAT
